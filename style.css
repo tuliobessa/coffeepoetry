@@ -6,9 +6,13 @@
   list-style: none;
   text-decoration: none;
 }
+body{
+  padding:1% 4%;
+  font-family: 'Poppins', sans-serif;
+}
 /* NAVBAR */
 nav{
-  background: white;
+  background: #ffffff;
   height: 80px;
   width: 100%;
 }
@@ -33,7 +37,7 @@ nav ul li a{
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family: 'Poppins', sans-serif;
+
 }
 a.active,a:hover{
   background: #612626;
@@ -53,10 +57,9 @@ a.active,a:hover{
   display: none;
 }
 
-.logo-bkg{
-  position: relative;
-text-align: center;
-}
+
+
+
 @media (max-width: 952px){
   /* navbar */
   .logo{
@@ -76,7 +79,7 @@ text-align: center;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: #ffffff;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -92,7 +95,7 @@ text-align: center;
   }
   a:hover,a.active{
     background: #612626;
-    color: #white;
+    color: #ffffff;
   }
   #check:checked ~ ul{
     left: 0;
@@ -102,4 +105,34 @@ section{
   background: url(images/bkg.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+  
+  text-align: center;
+  max-width: 100%;
+}
+section .logo-bkg{
+  text-align: center;
+  max-width: 100%;
+}
+section h3{
+  text-align: center;
+  padding-top: 2%;
+  font-size: 1.5rem;
+}
+section .button {
+  position: relative;
+  border: none;
+  padding: 20px 40px;
+  background-color: #612626;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  font-family: 'Amatic SC';
+  text-align: center;
+}
+section .button:hover{
+  background-color: #c27021;
 }
