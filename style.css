@@ -56,7 +56,13 @@ a.active,a:hover{
 #check{
   display: none;
 }
-
+.main{
+  background: url(images/bkg.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  text-align: center;
+  max-width: 100%;
+}
 
 
 
@@ -67,6 +73,9 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 16px;
+  }
+  .main{
+    padding-top: 7%;
   }
 }
 @media (max-width: 858px){
@@ -100,26 +109,23 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
+  .main{
+    padding-top: 7%;
+  }
 }
-section{
-  background: url(images/bkg.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-  
+
+/* MAIN 1 */
+.main .logo-bkg{
   text-align: center;
   max-width: 100%;
 }
-section .logo-bkg{
-  text-align: center;
-  max-width: 100%;
-}
-section h3{
+.main h3{
   text-align: center;
   padding-top: 2%;
   font-size: 1.5rem;
 }
-section .button {
-  position: relative;
+.main .button {
+
   border: none;
   padding: 20px 40px;
   background-color: #612626;
@@ -133,6 +139,12 @@ section .button {
   font-family: 'Amatic SC';
   text-align: center;
 }
-section .button:hover{
+.main .button:hover{
   background-color: #c27021;
+}
+/* MAIN 2 */
+.main-2 h2{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 3%;
 }
