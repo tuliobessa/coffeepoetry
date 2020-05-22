@@ -395,6 +395,8 @@ margin:auto;
 .poetry{
  display: none;
 }
-
+#popup{
+  width: 300px;
+}
 }
 /* END OF MEDIA QUERIES */
