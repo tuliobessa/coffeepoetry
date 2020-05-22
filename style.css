@@ -86,7 +86,7 @@ nav a.active, nav a:hover {
   font-size: 1.5rem;
 }
 
-.main .button, .main-2 .button, .ourvision .button, .bundle .button, .popup .button {
+.button {
   border: none;
   padding: 20px 40px;
   background-color: #612626;
@@ -101,7 +101,7 @@ nav a.active, nav a:hover {
   text-align: center;
 }
 
-.main .button:hover, .main-2 .button:hover, .ourvision .button:hover, .bundle .button:hover, .popup .button:hover  {
+.button:hover  {
   background-color: #c27021;
 }
 
@@ -190,17 +190,25 @@ nav a.active, nav a:hover {
 }
 
 #popup{
-  /* position: fixed;
+  text-align: center;
+  border: 10px solid #c27021;
+   position: fixed;
   top: 40%;
   left:50%;
   width: 400px;
   transform: translate(-50%, -50%);
-  padding: 50px;
+  padding: 10px;
   box-shadow: 0 5px 30px rgba(0,0,0,.30);
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
-  background: #fff;  */
+  background: #fff;
+}
+#popup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /* OURVISION */

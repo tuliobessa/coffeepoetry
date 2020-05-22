@@ -38,4 +38,3 @@ function validation(){
   alert("Form Submitted Successfully!");
   return true;
 }
-// CODE Extracted from https://www.youtube.com/watch?v=WY4rvU4ImgE&t=896s
