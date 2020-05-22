@@ -188,6 +188,10 @@ nav a.active, nav a:hover {
   font-size: 1.8rem;
   padding-top: 3%;
 }
+.bundle{
+  padding: 3%;
+  box-shadow: 0 0 13px -4px rgba(0, 0, 0, .17);
+}
 
 #popup{
   text-align: center;
@@ -397,6 +401,9 @@ margin:auto;
 }
 #popup{
   width: 300px;
+}
+.bundle{
+  margin-bottom: 3%;
 }
 }
 /* END OF MEDIA QUERIES */
