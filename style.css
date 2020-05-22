@@ -1,50 +1,55 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
-body{
-  padding:1% 4%;
+
+body {
+  padding: 1% 4%;
   font-family: 'Poppins', sans-serif;
 }
+
 /* NAVBAR */
-nav{
+nav {
   background: #ffffff;
   height: 80px;
   width: 100%;
 }
-.logo{
-margin-left: 10px;
-margin-top: 10px;
-  max-width: 100px;
 
+.logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  max-width: 100px;
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 60px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 2px;
 }
-nav ul li a{
+
+nav ul li a {
   color: black;
   font-weight: 500;
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 3px;
-
 }
-a.active,a:hover{
+
+nav a.active, nav a:hover {
   background: #612626;
   transition: .5s;
   color: white;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
   color: #612626;
   float: right;
@@ -53,38 +58,56 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-.main{
+
+.main {
   background: url(images/bkg.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
   text-align: center;
   max-width: 100%;
+  border: 2px solid transparent;
+  padding-top: 7%;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 952px) {
 
-
-@media (max-width: 952px){
   /* navbar */
-  .logo{
+  .logo {
     max-width: 100px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
   }
-  .main{
+
+  nav {
+    z-index: 1;
+  }
+
+  .main {
     padding-top: 7%;
+    background-position: center;
+  }
+
+  .work-items .items {
+    padding-bottom: 3%;
   }
 }
-@media (max-width: 858px){
+
+@media (max-width: 858px) {
+
   /* NAVBAR */
-  .checkbtn{
+  .checkbtn {
     display: block;
     margin-right: 40px;
   }
-  ul{
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -94,38 +117,62 @@ a.active,a:hover{
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 20px;
   }
-  a:hover,a.active{
+
+  nav a:hover, nav a.active {
     background: #612626;
     color: #ffffff;
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
   }
-  .main{
-    padding-top: 7%;
+
+  .work-items, .main-3, .main-4 {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .work-items .items, .bundle {
+    padding-bottom: 5%;
+  }
+.main-4 h2{
+  order:2;
+  text-align: center;
+}
+.main-4 img{
+  width: 70%;
+}
+.bundles{
+  flex-direction: column;
 }
 
+}
+/* END OF MEDIA QUERIES */
+
+/* HOME */
 /* MAIN 1 */
-.main .logo-bkg{
+.main .logo-bkg {
   text-align: center;
   max-width: 100%;
 }
-.main h3{
+
+.main h3 {
   text-align: center;
   padding-top: 2%;
   font-size: 1.5rem;
 }
-.main .button {
 
+.main .button, .main-2 .button, .ourvision .button, .bundle .button {
   border: none;
   padding: 20px 40px;
   background-color: #612626;
@@ -139,12 +186,110 @@ a.active,a:hover{
   font-family: 'Amatic SC';
   text-align: center;
 }
-.main .button:hover{
+
+.main .button:hover, .main-2 .button:hover, .bundle .button:hover {
   background-color: #c27021;
 }
+
 /* MAIN 2 */
-.main-2 h2{
+.main-2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.main-2 h2, .vision {
   font-size: 2.5rem;
   text-align: center;
   padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.work-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-items .items {
+  text-align: center;
+  flex: 0 1 300px;
+}
+
+.items h2 {
+  width: 10px;
+}
+
+/* MAIN 3 */
+
+.main-3 {
+  display: flex;
+  background-color: #c27021;
+  padding: 3%;
+}
+
+.main-3 h2 {
+  text-align: right;
+  font-size: 2rem;
+  padding-top: 7%;
+  color: #ffffff;
+  padding-left: 3%;
+}
+
+
+
+/* MAIN 4 */
+.main-4{
+  display: flex;
+  padding: 3%;
+
+}
+.main-4 h2 {
+  text-align: left;
+  font-size: 2rem;
+  padding-top: 7%;
+  padding-left: 3%;
+}
+.ourvision{
+  text-align: center;
+}
+
+/* SUBSCRIPTION */
+.sub{
+  text-align: center;
+    border: 2px solid transparent;
+}
+.sub h2{
+  font-size: 2.5rem;
+  padding: 3% 0 3% 0;
+}
+
+.bundles{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+  text-align: center;
+}
+
+
+/* FOOTER */
+.contact {
+  text-align: center;
+  background-color: #612626;
+  padding-top: 3%;
+  margin-top: 3%;
+}
+
+.contact a {
+  padding: 0 3%;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.contact a:hover {
+  color: #c27021;
+}
+
+.contact p {
+  padding-bottom: 3%;
 }
