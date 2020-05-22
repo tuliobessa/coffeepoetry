@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Coffee Poetry | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eda547a890.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <img class="logo" src="images/logo.png" alt="">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="subscription.html">Subscription Boxes</a></li>
+      <li><a  href="ourvision.html">Our Vision</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="contact-form">
+<h2>If you have any questions or have any feedback,
+please get in touch with us</h2>
+<p>info@coffepoetry.com</p>
+
+    <div class="wrapper">
+      <h2>Contact us</h2>
+      <div id="error_message">
+
+      </div>
+      <form action="" id="myform" onsubmit="return validation();">
+        <div class="input_field">
+          <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Contact Number" id="phone">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Email" id="email">
+        </div>
+        <div class="input_field">
+          <textarea placeholder="Message" id="message"></textarea>
+        </div>
+        <div class="btn2">
+          <input type="submit">
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <footer class="contact">
+
+
+    <a href="http://twitter.com/tuliobessa" alt="twitter-link" target="_blank"><i class=" fab fa-twitter"></i></a>
+    <a href="http://instagram.com/tuliobessa" alt="instagram-link" target="_blank"><i class=" fab fa-instagram"></i></a>
+
+    <p> © Copyright 2020 Coffe Poetry</p>
+
+  </footer>
+</body>
+
+</html>
