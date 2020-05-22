@@ -246,16 +246,14 @@ nav a.active, nav a:hover {
 #contact-form{
 	background-color: #ffe0c2;
 	text-align: center;
-padding: 7% 0;
+padding: 7% 3%;
 }
 #contact-form h2, p{
 margin-bottom: 3%;
+
 }
 .wrapper{
-
 margin:auto;
-
-
 	max-width:400px;
 	width: 100%;
 	background: #fff;
