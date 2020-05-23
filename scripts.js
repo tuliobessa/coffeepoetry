@@ -16,7 +16,7 @@ function validation(){
     return false;
   }
   if(subject.length < 10){
-    text = "Please Enter Correct Subject";
+    text = "Please Enter A Subject";
     error_message.innerHTML = text;
     return false;
   }

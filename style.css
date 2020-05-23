@@ -48,6 +48,10 @@ nav a.active, nav a:hover {
   transition: .5s;
   color: white;
 }
+nav .logo-link:hover{
+  background: none;
+  color: none
+}
 
 .checkbtn {
   font-size: 30px;
@@ -283,20 +287,7 @@ margin:auto;
 	height: 80px;
 	resize: none;
 }
-.wrapper .btn2 input[type="submit"]{
-  border: none;
-  padding: 20px 40px;
-  background-color: #612626;
-  letter-spacing: 1px;
-  color: white;
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-  font-family: 'Amatic SC';
-  text-align: center;
-}
+
 .wrapper #error_message{
 	margin-bottom: 20px;
 	padding: 0px;
@@ -361,10 +352,11 @@ margin:auto;
     font-size: 20px;
   }
 
-  nav a:hover, nav a.active {
+  nav  a:hover, nav a.active {
     background: #612626;
     color: #ffffff;
   }
+
 
   #check:checked~ul {
     left: 0;
