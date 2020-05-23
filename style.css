@@ -50,7 +50,7 @@ nav a.active, nav a:hover {
 }
 nav .logo-link:hover{
   background: none;
-  color: none
+
 }
 
 .checkbtn {
@@ -73,7 +73,7 @@ nav .logo-link:hover{
   height: calc(100vh - 80px);
   text-align: center;
   max-width: 100%;
-  padding-top: 7%;
+  padding-top: 3%;
 }
 
 
@@ -133,8 +133,9 @@ nav .logo-link:hover{
   flex: 0 1 300px;
 }
 
-.items h2 {
-  width: 10px;
+.items h3 {
+  padding-top: 3%;
+
 }
 
 /* MAIN 3 */
@@ -167,7 +168,7 @@ nav .logo-link:hover{
   padding-top: 7%;
   padding-left: 3%;
 }
-.ourvision{
+.ourvision, .ourvision2{
   text-align: center;
 }
 
@@ -179,6 +180,9 @@ nav .logo-link:hover{
 .sub h2{
   font-size: 2.5rem;
   padding: 3% 0 3% 0;
+}
+.sub h3{
+  font-weight: 200;
 }
 
 .bundles{
@@ -387,13 +391,19 @@ margin:auto;
   width: 70%;
 }
 .poetry{
- display: none;
+ display:none;
 }
 #popup{
   width: 300px;
 }
 .bundle{
-  margin-bottom: 3%;
+  margin-bottom: 5%;
+}
+.ourvision2 .main-3 h2, .ourvision2 .main-4 h2 {
+  font-size: 1rem;
+}
+.ourvision2 .main-4 img{
+  padding-top: 3%;
 }
 }
 /* END OF MEDIA QUERIES */
