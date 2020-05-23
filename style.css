@@ -200,6 +200,9 @@ nav .logo-link:hover{
   padding: 3%;
   box-shadow: 0 0 13px -4px rgba(0, 0, 0, .17);
 }
+.bundle h3, .bundle p{
+  font-weight: 200;
+}
 
 #popup{
   text-align: center;
