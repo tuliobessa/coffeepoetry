@@ -387,6 +387,9 @@ margin:auto;
 .main-4 img{
   width: 70%;
 }
+.main-3 img{
+  width: 50%;
+}
 .bundles{
   flex-direction: column;
 }
