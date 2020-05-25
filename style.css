@@ -53,6 +53,7 @@ nav .logo-link:hover{
 
 }
 
+
 .checkbtn {
   font-size: 30px;
   color: #612626;
@@ -226,6 +227,8 @@ nav .logo-link:hover{
   transition: 0.5s;
 }
 
+
+
 /* OURVISION */
 .roast, .poetry{
   padding-top: 3%;
@@ -245,7 +248,7 @@ nav .logo-link:hover{
   color: #ffffff;
 }
 
-.contact a:hover {
+.contact a:hover{
   color: #c27021;
 }
 
@@ -379,10 +382,12 @@ margin:auto;
   }
   .main-3 h2{
     text-align: center;
+    font-size: 1.5rem;
   }
 .main-4 h2{
   order:2;
   text-align: center;
+  font-size: 1.5rem;
 }
 .main-4 img{
   width: 70%;
