@@ -493,5 +493,9 @@ margin:auto;
 .ourvision2 .main-4 img{
   padding-top: 3%;
 }
+.cart-item-image{
+  width: 100px;
+  height: 60px;
+}
 }
 /* END OF MEDIA QUERIES */
