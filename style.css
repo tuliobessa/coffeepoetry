@@ -53,7 +53,6 @@ nav .logo-link:hover{
 
 }
 
-
 .checkbtn {
   font-size: 30px;
   color: #612626;
@@ -91,7 +90,7 @@ nav .logo-link:hover{
   font-size: 1.5rem;
 }
 
-.button {
+.button, .btn-purchase{
   border: none;
   padding: 20px 40px;
   background-color: #612626;
@@ -106,7 +105,7 @@ nav .logo-link:hover{
   text-align: center;
 }
 
-.button:hover  {
+.button:hover, .btn-purchase:hover  {
   background-color: #c27021;
 }
 
@@ -227,6 +226,84 @@ nav .logo-link:hover{
   transition: 0.5s;
 }
 
+/* CART */
+.container {
+  max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1.5em;
+    text-align: center;
+
+  }
+
+  .content-section {
+box-shadow: 0 5px 30px rgba(0,0,0,.30);
+      text-align: center;
+      padding: 3%;
+  }
+  .cart-row {
+      display: flex;
+  }
+  .cart-row:last-child {
+      border-bottom: 1px solid black;
+  }
+
+  .cart-row:last-child .cart-column {
+      border: none;
+  }
+  .cart-item {
+      width: 45%;
+  }
+  .cart-header {
+      font-weight: bold;
+      font-size: 1.25em;
+      color: #333;
+  }
+  .cart-column {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid black;
+      margin-right: 1.5em;
+      padding-bottom: 10px;
+      margin-top: 10px;
+  }
+  .cart-total {
+      text-align: end;
+      margin-top: 10px;
+      margin-right: 10px;
+  }
+
+  .cart-total-title {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: black;
+      margin-right: 20px;
+  }
+
+  .cart-total-price {
+      color: #333;
+      font-size: 1.1em;
+  }
+  .btn {
+      text-align: center;
+      vertical-align: middle;
+      padding: .67em .67em;
+      cursor: pointer;
+  }
+
+
+  .btn-danger {
+      color: white;
+      background-color: #EB5757;
+      border: none;
+      border-radius: .3em;
+      font-weight: bold;
+  }
+  .cart-item-title {
+      color: #333;
+      margin-left: .5em;
+      font-size: 1.2em;
+  }
+/* CART END */
 
 
 /* OURVISION */

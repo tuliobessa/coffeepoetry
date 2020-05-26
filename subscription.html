@@ -7,7 +7,8 @@
   <title>Coffee Poetry | Subscription</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="scripts.js"></script>
+  <link rel="icon" href="favicon.ico">
+  <script src="store.js" async></script>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@200;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/eda547a890.js" crossorigin="anonymous"></script>
 </head>
@@ -44,37 +45,54 @@
 <section>
   <div class="bundles">
     <div class="bundle">
-      <img src="images/bundle1.png" alt="bundle">
+      <img class="shop-item-image" src="images/bundle1.png" alt="bundle">
+      <h5 class="shop-item-title">Bundle 1</h5>
     <h3>1 Bag of Coffee</h3>
     <p>+</p>
       <h3>1 book of 10 poems</h3>
-      <h4>€18,00/month</h4>
-      <button onclick="toggle()" class="button" type="button" name="button">ADD TO CART</button>
+      <h4><span class="shop-item-price">€18,00</span>/month</h4>
+      <button onclick="toggle()" class="button shop-item-button" type="button" name="button">ADD TO CART</button>
     </div>
     <div class="bundle">
-      <img src="images/bundle2.png" alt="bundle">
+      <img class="shop-item-image" src="images/bundle2.png" alt="bundle">
+    <h5 class="shop-item-title">Bundle 2</h5>
     <h3>2 Bags of Coffee</h3>
     <p>+</p>
       <h3>1 book of 15 poems</h3>
-      <h4>€30,00/month</h4>
-      <button onclick="toggle()" class="button" type="button" name="button">ADD TO CART</button>
+      <h4><span class="shop-item-price">€30,00</span>/month</h4>
+      <button onclick="toggle()" class="button shop-item-button" type="button" name="button">ADD TO CART</button>
     </div>
     <div class="bundle">
-      <img src="images/bundle3.png" alt="bundle">
+      <img class="shop-item-image" src="images/bundle3.png" alt="bundle">
+    <h5 class="shop-item-title">Bundle 3</h5>
     <h3>3 Bags of Coffee</h3>
     <p>+</p>
       <h3>1 book of 30 poems</h3>
-      <h4>€41,00/month</h4>
-      <button onclick="toggle()" class="button" type="button" name="button">ADD TO CART</button>
+      <h4><span class="shop-item-price">€41,00</span>/month</h4>
+      <button onclick="toggle()" class="button shop-item-button" type="button" name="button">ADD TO CART</button>
     </div>
   </div>
 </section>
-<script type="text/javascript">
+<script>
   function toggle(){
     var popup = document.getElementById(`popup`);
     popup.classList.toggle(`active`);
   }
 </script>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">€0</span>
+    </div>
+    <button class=" btn-purchase" type="button">BUY NOW</button>
+</section>
   <footer class="contact">
 
 
