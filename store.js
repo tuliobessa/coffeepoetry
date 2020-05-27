@@ -44,7 +44,7 @@ function addToCartClicked(event) {
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
     addItemToCart(title, price, imageSrc)
-    updateCartTotal();
+    updateCartTotal()
 }
 
 function addItemToCart(title, price, imageSrc) {
